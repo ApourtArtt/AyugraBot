@@ -1,0 +1,31 @@
+#ifndef ITEMENUM_H
+#define ITEMENUM_H
+
+enum class InventoryType {
+    EQUIPMENT   = 0,
+    MAIN        = 1,
+    ETC         = 2,
+    MINIPAYS    = 3,
+    UNKNOWN4    = 4,
+    EQUIPMENT_L = 8,
+    MAIN_L      = 9,
+    ETC_L       = 10
+};
+
+enum class ItemType {
+    
+};
+
+/*INDEX 0 0 6 0 32 0 - bow
+INDEX 0 1 2 1 280 3 - armor archer
+INDEX <inv> <type of item> <class/more type>
+0 is weapon, 1 is armor in <type of item>
+<class/more type> for weapons:
+1 - sword
+3 - knife (idk, archer secondary)
+5 - crossbow
+6 - bow
+8 - magic gun (idk, mage secondary)
+9 - staff*/
+
+#endif // ITEMENUM_H

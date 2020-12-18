@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ItemUseWidget</class>
+ <widget class="QWidget" name="ItemUseWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>268</width>
+    <height>261</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox_14">
+     <property name="title">
+      <string>Manage Items</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="1" column="0" colspan="2">
+       <widget class="QComboBox" name="CB_ITEMS"/>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QComboBox" name="CB_ITEMSADDED"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QComboBox" name="CB_COND">
+        <item>
+         <property name="text">
+          <string>When HP &lt;</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>When MP &lt;</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>When HP &lt; %</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>When MP &lt; %</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>After x seconds</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>After x minutes</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QPushButton" name="PB_ADD">
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <widget class="QPushButton" name="PB_DELETE">
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="SB_COND">
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::UpDownArrows</enum>
+        </property>
+        <property name="maximum">
+         <number>999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QCheckBox" name="CB_CONTINUEUSING">
+        <property name="text">
+         <string>Continue using even when bot is stopped</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

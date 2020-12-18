@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AccountManagerWindow</class>
+ <widget class="QMainWindow" name="AccountManagerWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>505</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="2">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Username</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2" colspan="2">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Account type</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Country</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3" colspan="3">
+     <widget class="QLineEdit" name="LE_PASSWORD"/>
+    </item>
+    <item row="4" column="4" colspan="2">
+     <widget class="QComboBox" name="CB_COUNTRY">
+      <item>
+       <property name="text">
+        <string>EN</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>IT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ES</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CZ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RU</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TR</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Gfuid</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="PB_RANDOMDYNAMIC">
+        <property name="locale">
+         <locale language="English" country="UnitedKingdom"/>
+        </property>
+        <property name="text">
+         <string>Random (dynamic)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="PB_RANDOMSTATIC">
+        <property name="text">
+         <string>Random (static)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="5" column="4" colspan="2">
+     <widget class="QComboBox" name="CB_ACCOUNTTYPE">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GameForge Live</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="6" column="2" colspan="4">
+     <widget class="QPushButton" name="PB_ADD">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3" colspan="3">
+     <widget class="QLineEdit" name="LE_USERNAME"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3" colspan="3">
+     <widget class="QLineEdit" name="LE_GFUID"/>
+    </item>
+    <item row="3" column="2" colspan="3">
+     <widget class="QPushButton" name="PB_REGENERATE">
+      <property name="text">
+       <string>Regenerate
+(Windows only)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="6" colspan="2">
+     <widget class="QListWidget" name="LW_ACCOUNTS"/>
+    </item>
+    <item row="6" column="0" colspan="2">
+     <widget class="QPushButton" name="PB_DELETE">
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>LE_USERNAME</tabstop>
+  <tabstop>LE_PASSWORD</tabstop>
+  <tabstop>LE_GFUID</tabstop>
+  <tabstop>PB_REGENERATE</tabstop>
+  <tabstop>PB_RANDOMDYNAMIC</tabstop>
+  <tabstop>PB_RANDOMSTATIC</tabstop>
+  <tabstop>CB_COUNTRY</tabstop>
+  <tabstop>CB_ACCOUNTTYPE</tabstop>
+  <tabstop>PB_ADD</tabstop>
+  <tabstop>PB_DELETE</tabstop>
+  <tabstop>LW_ACCOUNTS</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
